@@ -1,12 +1,3 @@
-from usuario import Usuario
-
-class Amigo(Usuario):
-    """Classe que representa um amigo na Steam, herdando de Usuario"""
-    
-    def __init__(self, nome, status="offline"):
-        super().__init__(nome, status) 
-
-	
 class ListaDeAmigos:
   """Gerencia a lista de amigos do usuário."""
 

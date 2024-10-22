@@ -13,6 +13,7 @@ class UsuarioPadrao:
       
   def mostrar_info(self):
     print(f"Usuário: {self.nome}, Status: {self.status}")
+    
 
 
 class Usuario(UsuarioPadrao):
@@ -23,5 +24,9 @@ class Usuario(UsuarioPadrao):
         print(f"Usuário: {self.nome}, Status: {self.status}")
 
 
-
+class Amigo(Usuario):
+    """Classe que representa um amigo na Steam, herdando de Usuario"""
+    
+    def __init__(self, nome, status="offline"):
+        super().__init__(nome, status) 
 

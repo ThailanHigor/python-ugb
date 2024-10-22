@@ -11,7 +11,7 @@ class Jogo:
         self.skins = []
 
     def __str__(self):
-        return f"{self.nome} ({self.categoria}) - R${self.preco:.2f}"
+        return f"{self.nome} ({self.categoria}) - R${self.preco}"
     
     def dar_desconto(self, valor_em_reais):
         self.preco =  self.preco - valor_em_reais
